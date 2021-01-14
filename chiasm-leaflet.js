@@ -11,7 +11,7 @@ var degPerSec = 6
 // start angles
 var angles = { x: -20, y: 40, z: 0}
 // colors
-var colorWater = '#32a8a6'
+var colorWater = '#237282'
 var colorLand = '#124503'
 var colorGraticule = 'white'
 var colorCountry = '#092401'
