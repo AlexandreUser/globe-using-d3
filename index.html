@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Map & Globe</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- Leaflet.js, a geographic mapping library. -->
+
+
+    <!-- Chiasm core and plugins. github.com/chiasm-project -->
+
+
+    <!-- Custom Chiasm plugins for this example. -->
+<body>
+    <h2 id="current"></h2>
+    <canvas id="globe"></canvas>
+  </body>
+  <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: #555;
+        }
+
+        #globe {
+        cursor: move;  
+        }
+
+        #current {
+        position: absolute;
+        color: white;
+        font-family: sans-serif;
+        margin-left: 4%;
+        margin-top: 4%;
+        }
+  </style>
+      <script src="chiasm-leaflet.js"></script>
+
+</html>
