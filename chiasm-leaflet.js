@@ -13,7 +13,7 @@ var angles = { x: -20, y: 40, z: 0}
 // colors
 var colorWater = '#237282'
 var colorLand = '#124503'
-var colorGraticule = 'white'
+var colorGraticule = '#808080'
 var colorCountry = '#092401'
 var svg = d3.select("body").append("svg")
     .attr("width", width)
@@ -107,12 +107,13 @@ function dragended() {
 function render() {
   context.clearRect(0, 0, width, height)
   fill(water, colorWater)
-  stroke(graticule, colorGraticule)
   fill(land, colorLand)
 
   if (currentCountry) {
     fill(currentCountry, colorCountry)
   }
+  stroke(graticule, colorGraticule)
+
   fill(marks,"#7d0800")
 
 }
